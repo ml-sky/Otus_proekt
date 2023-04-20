@@ -222,7 +222,7 @@ sudo yum update
 			  /usr/share/logstash/bin/logstash --path.settings /etc/logstash -t
 		
 		4.1.3 #Настройка filebeat на основной сервер
-			  #Скачиваем с GIT filebeat-8.7.0-x86_64.rpm
+			  #Устанавливаем filebeat-8.7.0-x86_64.rpm
 			  rpm -ivh filebeat-8.7.0-x86_64.rpm
 			  #Получаем с GIT filebeat.yml и заменяем в /etc/filebeat
 			  #Разрешаем автозапуск filebeat и перезапускаем сервис
