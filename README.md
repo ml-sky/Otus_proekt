@@ -17,9 +17,9 @@ ELK сервер 192.168.8.20 Ubuntu
 Инструкция:
 
 #Для CentOS/RHat
-sudo yum update
-	#Установка Git
-	sudo yum install git -y
+		sudo yum update
+		#Установка Git
+		sudo yum install git -y
 	
 	1.  #Установка MySQL
 		# Установка репозитория Oracle MySQL 8.0 (Для CentOs 7)
