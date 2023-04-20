@@ -5,8 +5,9 @@ ReadME Для проектной работы Otus_admBasic
 	- СУБД MySQL;
 	- СУБД MySQL на slave сервер для репликации;
 	- Web server Nginx, Apache;
-	- Система логирования ELK stack (Elasticsearch, Logstash и Kibana);
+	- Система логирования ELK stack (Elasticsearch, Logstash и Kibana) 8.6 на Ubuntu;
 	- Система мониторинга Prometeus+Grafana на docker_compose;
+	- filebeat на основной сервер 8.6 на CentOS;
 Установка статического ip:
 Основной сервер 192.168.8.16 CentOs
 SLAVE сервер для репликации 192.168.8.18 CentOs
