@@ -180,7 +180,7 @@
 # This section was automatically generated during setup.
 server.port: 5601
 server.host: 0.0.0.0
-elasticsearch.hosts: ['https://192.168.8.20:9200']
+elasticsearch.hosts: ['https://192.168.8.27:9200']
 logging.appenders.file.type: file
 logging.appenders.file.fileName: /var/log/kibana/kibana.log
 logging.appenders.file.layout.type: json
