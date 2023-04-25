@@ -5,12 +5,12 @@
 
 # =================== System: Kibana Server ===================
 # Kibana is served by a back end server. This setting specifies the port to use.
-#server.port: 5601
+server.port: 5601
 
 # Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.
 # The default is 'localhost', which usually means remote machines will not be able to connect.
 # To allow connections from remote users, set this parameter to a non-loopback address.
-#server.host: "0.0.0.0"
+server.host: "192.168.8.27"
 
 # Enables you to specify a path to mount Kibana at if you are running behind a proxy.
 # Use the `server.rewriteBasePath` setting to tell Kibana if it should remove the basePath
@@ -174,19 +174,3 @@
 # Maximum number of documents loaded by each shard to generate autocomplete suggestions.
 # This value must be a whole number greater than zero. Defaults to 100_000
 #unifiedSearch.autocomplete.valueSuggestions.terminateAfter: 100000
-
-### >>>>>>> BACKUP END: Kibana interactive setup (2023-04-20T10:42:56.930Z)
-
-# This section was automatically generated during setup.
-server.port: 5601
-server.host: 0.0.0.0
-elasticsearch.hosts: ['https://192.168.8.27:9200']
-logging.appenders.file.type: file
-logging.appenders.file.fileName: /var/log/kibana/kibana.log
-logging.appenders.file.layout.type: json
-logging.root.appenders: [default, file]
-pid.file: /run/kibana/kibana.pid
-elasticsearch.serviceAccountToken: AAEAAWVsYXN0aWMva2liYW5hL2Vucm9sbC1wcm9jZXNzLXRva2VuLTE2ODE5ODczNzU2NDM6M002STMwaWhUVG1TeTBURXROZUNUUQ
-elasticsearch.ssl.certificateAuthorities: [/var/lib/kibana/ca_1681987376919.crt]
-xpack.fleet.outputs: [{id: fleet-default-output, name: default, is_default: true, is_default_monitoring: true, type: elasticsearch, hosts: ['https://192.168.8.20:9200'], ca_trusted_fingerprint: 08eea7a9ce901042897355d100819806cebf59569c40acf0d9d6b1f2de3f03df}]
-
