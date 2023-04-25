@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Присвоение переменным
-HOST="192.168.8.16"
+HOST="192.168.8.25"
 PASS_MASTER="mysqlSlave2023#"
 PORT_MASTER="3306"
 USER="repl"
