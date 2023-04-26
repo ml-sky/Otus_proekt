@@ -195,12 +195,14 @@ ELK сервер 192.168.8.27 Ubuntu
 			  mkdir -p /opt/prometheus_stack/{prometheus,grafana}
 			  #Переходим в каталог prometheus_stack и копируем туда с GITHUB файл docker-compose.yml
 			  cd /opt/prometheus_stack 
-			  cp Otus_proekt/configs/docker-compose.yml /opt/prometheus_stack/
+			  cp /root/Otus_proekt/configs/docker-compose.yml /opt/prometheus_stack/
 			  #Переходим в каталог prometheus и копируем туда с GITHUB файл prometheus.yml
-			  cp Otus_proekt//configs/prometheus.yml /opt/prometheus_stack/prometheus/
+			  cp /root/Otus_proekt/configs/prometheus.yml /opt/prometheus_stack/prometheus/
 			  #Запускаем контейнеры находясь в cd /opt/prometheus_stack 
 			  docker-compose up -d
 			  #Проверяем Prometheus 192.168.8.25:9090 + Node Exporter 192.168.8.25:9100 + Grafana 192.168.8.25:3000
+			  #В Grafana настраиваем Data source http://prometheus:9090
+			  #Import Dashboard 1860
 			  #Перезапуск всех сервисов
 			  docker-compose up -d --no-deps --build
 	
